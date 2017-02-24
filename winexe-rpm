@@ -106,7 +106,7 @@ function get_winexe_sources() {
 function get_samba_sources() {
   if [ ! -f "./SOURCES/samba.tar.gz" ]; then
     cd ${SOURCES_DIR} || exit
-    git clone git://git.samba.org/samba.git samba
+    git clone https://git.samba.org/samba.git samba
     cd samba || exit
     git reset --hard ${SAMBA_GITHASH}
   fi
